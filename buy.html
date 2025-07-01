@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Now - UzyCart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Buy Now</h1>
+  </header>
+  <main>
+    <section style="padding: 1em;">
+      <img src="qr.jpg" alt="Scan to Pay" style="width: 100%; max-width: 300px; display: block; margin: 0 auto;" />
+      <p style="text-align: center;">Scan this QR to pay ₹199</p>
+      <form name="orderForm" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto;">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="file" name="payment" accept="image/*" required />
+        <button type="submit" class="buy-btn">Submit Order</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
